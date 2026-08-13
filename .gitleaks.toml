@@ -1,0 +1,16 @@
+title = "Biteo Vendor Panel gitleaks config"
+
+# Extend gitleaks default rules.
+[extend]
+useDefault = true
+
+# Firebase client identifiers (API keys, app IDs) are PUBLIC configuration,
+# not server secrets. They are only allowed in the explicitly-listed
+# configuration/example paths, never in secret files.
+[allowlist]
+description = "Firebase public client configuration and scan tooling"
+paths = [
+  "lib/firebase_options.dart",
+  "android/app/google-services.json.example",
+  ".github/scripts/secret-scan.sh",
+]

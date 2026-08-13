@@ -1,0 +1,88 @@
+# ─────────────────────────────────────────────
+# Biteo Vendor Panel — root .gitignore
+# ─────────────────────────────────────────────
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/build_old/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ─────────────────────────────────────────────
+# Environment / secrets
+# ─────────────────────────────────────────────
+# Never commit real .env files anywhere in the repository.
+.env
+.env.*
+!.env.example
+functions/.env
+functions/.env.*
+!functions/.env.example
+
+# Firebase client configuration.
+# The real google-services.json is intentionally NOT committed. A developer
+# (or CI via the GOOGLE_SERVICES_JSON secret) supplies it locally.
+# The repository ships `google-services.json.example` as the template.
+android/app/google-services.json
+**/GoogleService-Info.plist
+
+# Android local / signing secrets
+android/local.properties
+key.properties
+**/*.keystore
+**/*.jks
+**/*.keybox
+
+# Node (Cloud Functions)
+node_modules/
+
+# Firebase CLI
+firebase-debug.log
+firebase-debug.*.log
+
+# NOTE:
+# The Gradle wrapper files MUST be tracked so CI can build from a clean
+# checkout:
+#   android/gradlew
+#   android/gradlew.bat
+#   android/gradle/wrapper/gradle-wrapper.jar
+#   android/gradle/wrapper/gradle-wrapper.properties
+# Do NOT add ignore rules for them.
+#
+# pubspec.lock MUST be tracked for reproducible builds. Do NOT ignore it.

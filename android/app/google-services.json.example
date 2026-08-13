@@ -1,0 +1,30 @@
+{
+  "_NOTE": "Template ONLY. Never commit a real google-services.json. Obtain the real file from the Firebase console: Project Settings > Your apps > the Android app (in.biteo.vendor, project biteo-1e76d) > google-services.json, then place it at android/app/google-services.json. Until the in.biteo.vendor Firebase Android app is registered, the real file additionally requires this placeholder app to exist first.",
+  "project_info": {
+    "project_number": "PASTE_PROJECT_NUMBER",
+    "project_id": "biteo-1e76d",
+    "storage_bucket": "biteo-1e76d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "PASTE_MOBILE_SDK_APP_ID",
+        "android_client_info": {
+          "package_name": "in.biteo.vendor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "PASTE_CURRENT_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

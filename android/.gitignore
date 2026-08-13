@@ -1,0 +1,21 @@
+# Biteo Vendor Panel — Android .gitignore
+#
+# NOTE: The Gradle wrapper files (gradlew, gradlew.bat,
+# gradle/wrapper/gradle-wrapper.jar and gradle-wrapper.properties) MUST be
+# tracked so CI can build from a clean checkout. They are NOT ignored here.
+
+/captures/
+/local.properties
+/.gradle
+GeneratedPluginRegistrant.java
+.cxx/
+
+# Gradle build output and Kotlin caches
+/build/
+/.kotlin/
+
+# Remember to never publicly share your keystore.
+key.properties
+**/*.keystore
+**/*.jks
+**/*.keybox
