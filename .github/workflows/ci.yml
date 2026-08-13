@@ -73,7 +73,7 @@ jobs:
           chmod +x /usr/local/bin/gitleaks
 
       - name: gitleaks scan
-        run: gitleaks dir --no-banner -c .gitleaks.toml .
+        run: gitleaks git --no-banner -c .gitleaks.toml
 
       - name: Biteo secret-scan gate
         run: ./.github/scripts/secret-scan.sh

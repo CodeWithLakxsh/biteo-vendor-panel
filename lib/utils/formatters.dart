@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 ///
 /// Mirrors the formatting previously inlined in menu/dashboard/order UI.
 String formatRupeesFromPaise(num paise) {
-  final rupees = (paise as num).toDouble() / 100;
+  final rupees = paise.toDouble() / 100;
   return '₹ ${rupees.toStringAsFixed(0)}';
 }
 
