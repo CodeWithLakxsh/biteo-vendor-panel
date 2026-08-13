@@ -74,7 +74,9 @@ check_pattern() {
   local label="$3"
 
   # Matches whose value is a known placeholder are fine.
-  if grep -E "$pattern" "$file" | grep -qvE 'PENDING_|YOUR_|PASTE_|PLACEHOLDER|CHANGE_ME'; then
+  # `-e` forces grep to treat the pattern as a regex pattern (not an option),
+  # required because the private-key pattern begins with '-'.
+  if grep -E -e "$pattern" "$file" | grep -qvE 'PENDING_|YOUR_|PASTE_|PLACEHOLDER|CHANGE_ME'; then
     echo "::error::Potential $label in $file (value redacted)"
     FAILED=1
   fi
