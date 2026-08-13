@@ -80,4 +80,4 @@ jobs:
         run: gitleaks detect --no-banner -c .gitleaks.toml
 
       - name: Biteo secret-scan gate
-        run: ./.github/scripts/secret-scan.sh
+        run: bash ./.github/scripts/secret-scan.sh
