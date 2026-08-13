@@ -1,5 +1,5 @@
 {
-  "_NOTE": "Template ONLY. Never commit a real google-services.json. Obtain the real file from the Firebase console: Project Settings > Your apps > the Android app (in.biteo.vendor, project biteo-1e76d) > google-services.json, then place it at android/app/google-services.json. Until the in.biteo.vendor Firebase Android app is registered, the real file additionally requires this placeholder app to exist first.",
+  "_NOTE": "Template ONLY. Never commit a real google-services.json. The registered Firebase Android app for this project currently uses package com.example.biteo_vendor_panel, so the real file must contain a client whose android_client_info.package_name matches the active applicationId. The target package in.biteo.vendor is documented in docs/deployment.md pending Firebase registration. Obtain the real file from the Firebase console: Project Settings > Your apps > the Android app (project biteo-1e76d) > google-services.json, then place it at android/app/google-services.json.",
   "project_info": {
     "project_number": "PASTE_PROJECT_NUMBER",
     "project_id": "biteo-1e76d",
@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "PASTE_MOBILE_SDK_APP_ID",
         "android_client_info": {
-          "package_name": "in.biteo.vendor"
+          "package_name": "com.example.biteo_vendor_panel"
         }
       },
       "oauth_client": [],

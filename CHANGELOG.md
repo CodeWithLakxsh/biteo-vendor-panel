@@ -19,8 +19,10 @@ All notable changes to this project are documented in this file.
 
 ### Changed
 
-- Renamed package/applicationId from `com.example.biteo_vendor_panel` to
-  `in.biteo.vendor` across Android, iOS, macOS, Linux, and Windows hosts.
+- Application ID kept as `com.example.biteo_vendor_panel` (the only registered
+  Firebase Android app for project `biteo-1e76d`) so CI can validate against
+  the real client config. The target package `in.biteo.vendor` is documented
+  in `docs/deployment.md` pending a new Firebase app registration.
 - Reconstructed `lib/firebase_options.dart` from the existing Firebase client
   config for project `biteo-1e76d` (values marked for refresh via
   `flutterfire configure` after registering the new Android app).

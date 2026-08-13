@@ -32,7 +32,7 @@ _To be added._
 
 ```
 biteo_vendor_panel/
-├── android/                  # Android host (applicationId: in.biteo.vendor)
+├── android/                  # Android host (applicationId: com.example.biteo_vendor_panel)
 ├── ios/                      # iOS host (not yet release-configured)
 ├── linux/                    # Linux desktop host
 ├── macos/                    # macOS desktop host
@@ -71,7 +71,7 @@ biteo_vendor_panel/
 2. Install Functions dependencies: `cd functions && npm ci`.
 3. Configure Firebase for your local project:
 
-   - Register the Android app with package `in.biteo.vendor` in the Firebase
+   - Register the future target package `in.biteo.vendor` in the Firebase
      console (project `biteo-1e76d`) and download `google-services.json` into
      `android/app/`.
    - Run `flutterfire configure -p biteo-1e76d` to regenerate
@@ -107,7 +107,9 @@ are validated in CI (see `.github/workflows/ci.yml`). CI injects
 
 ## Application identity
 
-- Application ID / package: `in.biteo.vendor`
+- Application ID / package: `com.example.biteo_vendor_panel` (the only
+  registered Firebase Android app for project `biteo-1e76d`; target package
+  `in.biteo.vendor` is documented in `docs/deployment.md` pending registration)
 - Firebase project: `biteo-1e76d`
 - Versioning: Semantic Versioning (`1.0.0+1`), tagged `v1.0.0`
 

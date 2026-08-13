@@ -3,17 +3,22 @@
 ## Overview
 
 The app targets Firebase project **`biteo-1e76d`** (project number
-`476619872302`). Application ID is **`in.biteo.vendor`**.
+`476619872302`). The active Android application ID is
+**`com.example.biteo_vendor_panel`** — the only registered Firebase Android
+app for this project. The target package **`in.biteo.vendor`** is documented
+below and is pending Firebase registration.
 
 ## Required Firebase app registrations
 
-The following are **blockers** and must be completed before a working build
-can be produced. Do not fabricate configuration values.
+The following are **blockers** and must be completed before the target package
+can be used. Do not fabricate configuration values.
 
 ### Android — `in.biteo.vendor` (REQUIRED, pending)
 
-The applicationId was renamed to `in.biteo.vendor`, but no Firebase Android
-app exists with that package yet. Until it is registered:
+The applicationId is currently `com.example.biteo_vendor_panel` (matching the
+registered Firebase app) so CI can validate the build against the real client
+config. To adopt the target package `in.biteo.vendor`, no Firebase Android app
+exists with that package yet. Until it is registered:
 
 1. In the Firebase console (project `biteo-1e76d`), add an Android app with
    package `in.biteo.vendor`.

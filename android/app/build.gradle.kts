@@ -19,7 +19,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "in.biteo.vendor"
+    namespace = "com.example.biteo_vendor_panel"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -34,7 +34,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "in.biteo.vendor"
+        applicationId = "com.example.biteo_vendor_panel"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

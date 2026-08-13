@@ -48,8 +48,11 @@ lib/
 
 - **No code generation.** No Freezed / build_runner; no generated
   `.g.dart` files. Avoids a codegen step in CI.
-- **Application ID.** Renamed to `in.biteo.vendor` (a new Firebase Android
-  app must be registered under this package — see `docs/deployment.md`).
+- **Application ID.** Currently `com.example.biteo_vendor_panel` — the only
+  registered Firebase Android app for project `biteo-1e76d`. The target
+  package `in.biteo.vendor` is documented (see `docs/deployment.md`) and
+  pending Firebase registration; adopting it requires a new Android app and a
+  refreshed `google-services.json` + `firebase_options.dart`.
 - **Firebase options.** Reconstructed from the existing registered client
   config; web/iOS values are `PENDING_*` until the corresponding Firebase
   apps are registered.
